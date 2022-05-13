@@ -1,0 +1,17 @@
+body {
+  font-family: "Inter", sans-serif;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+a,
+button:not(.selected) {
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: #03b2cb;
+  }
+}

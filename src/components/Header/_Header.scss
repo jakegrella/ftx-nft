@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  .header_logo {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    img {
+      width: 10rem;
+      object-fit: contain;
+      margin-right: 0.75rem;
+    }
+  }
+
+  .header_options {
+    display: flex;
+
+    .header_options_items,
+    .header_options_blockchain {
+      margin-left: 2rem;
+    }
+  }
+}
