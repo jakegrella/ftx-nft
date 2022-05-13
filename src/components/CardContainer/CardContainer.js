@@ -20,7 +20,8 @@ export const CardContainer = () => {
 
   useEffect(() => {
     updateData();
-  }, [selectedBlockchain]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedBlockchain, selectedItems]);
 
   return (
     <section className="cardContainer">
@@ -29,7 +30,7 @@ export const CardContainer = () => {
           selectedItems === "collections" ? (
             <CollectionCard key={i.collectionDict.id} collectionData={i} />
           ) : (
-            <NFTCard key={i.collectionDict.id} nft={i} />
+            <NFTCard key={i.id} nft={i} />
           )
         )}
     </section>

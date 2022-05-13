@@ -18,10 +18,10 @@ export const getData = async (
     } else if (selectedItems === "nfts") {
       const res = await fetch(
         baseUrl +
-          `nft/nfts_filtered?startInclusive=${startInclusive}&endExclusive=${endExclusive}&nft_filter_string={%22nftAuctionFilter%22:%22all%22,%22minPriceFilter%22:null,%22maxPriceFilter%22:null,%22seriesFilter%22:[],%22traitsFilter%22:{},%22searchStringFilter%22:%22%22,%22mintSourceFilter%22:%22${selectedBlockchain}%22,%22include_not_for_sale%22:true}&sortFunc=offer_asc`
+          `nfts_filtered?startInclusive=${startInclusive}&endExclusive=${endExclusive}&nft_filter_string={%22nftAuctionFilter%22:%22all%22,%22minPriceFilter%22:null,%22maxPriceFilter%22:null,%22seriesFilter%22:[],%22traitsFilter%22:{},%22searchStringFilter%22:%22%22,%22mintSourceFilter%22:%22${selectedBlockchain}%22,%22include_not_for_sale%22:true}&sortFunc=offer_asc`
       );
       const data = await res.json();
-      itemData = data.result.collections;
+      itemData = data.result.nfts;
     }
   } catch (error) {
     console.error(error.message);

@@ -23,7 +23,7 @@ export const Header = () => {
             onClick={() => updateSelectedItems("collections")}
             selected={selectedItems === "collections"}
           >
-            collections
+            Collections
           </Button>
           <Button
             onClick={() => updateSelectedItems("nfts")}
@@ -37,25 +37,25 @@ export const Header = () => {
             onClick={() => updateSelectedBlockchain("all")}
             selected={selectedBlockchain === "all"}
           >
-            all
+            All
           </Button>
           <Button
             onClick={() => updateSelectedBlockchain("ftx")}
             selected={selectedBlockchain === "ftx"}
           >
-            ftx
+            FTX
           </Button>
           <Button
             onClick={() => updateSelectedBlockchain("sol")}
             selected={selectedBlockchain === "sol"}
           >
-            sol
+            SOL
           </Button>
           <Button
             onClick={() => updateSelectedBlockchain("eth")}
             selected={selectedBlockchain === "eth"}
           >
-            eth
+            ETH
           </Button>
         </div>
       </div>
